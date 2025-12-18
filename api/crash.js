@@ -43,7 +43,7 @@ export default {
             error: "Stake API Error",
             details: data.errors,
           }),
-          { status: 500, headers: { "Content-Type": "application/json" } }
+          { status: 500, headers: { "Content-Type": "text/json" } }
         );
       }
 
@@ -56,7 +56,7 @@ export default {
           count: crashpoints.length,
           crashpoints,
         }),
-        { status: 200, headers: { "Content-Type": "application/json" } }
+        { status: 200, headers: { "Content-Type": "text/json" } }
       );
     } catch (err) {
       return new Response(
@@ -64,7 +64,7 @@ export default {
           error: "Backend Fetch Failed",
           details: err.message,
         }),
-        { status: 500, headers: { "Content-Type": "application/json" } }
+        { status: 500, headers: { "Content-Type": "text/json" } }
       );
     }
   },
