@@ -1,5 +1,5 @@
 {
-  "name": "my-worker",
+  "name": "crash",
   "main": "api/crash.js",
   "compatibility_date": "2025-12-18"
 }
